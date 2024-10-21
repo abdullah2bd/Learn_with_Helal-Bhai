@@ -39,7 +39,7 @@
 //    }
 // });
 
-/*
+
 
 
 
@@ -96,10 +96,10 @@ SubmitBtn.addEventListener("click", function () {
 
 
 
-*/
 
 
 
+/*
 
 let userName = document.getElementById("name");
 let phone = document.getElementById("phone");
@@ -122,7 +122,7 @@ submitBtn.addEventListener("click", function( ) {
 
   console.log
 });
-
+*/
 
 
 
