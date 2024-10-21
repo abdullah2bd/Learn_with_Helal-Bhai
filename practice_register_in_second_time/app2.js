@@ -39,7 +39,9 @@
   });
 
 
-
+function hideError() {
+  errortag.innerHTML = "";
+}
 
 
 
