@@ -20,24 +20,29 @@
 
     if(Name.value.length < 5) 
       {
-      errortag.innerHTML = "Name  length must be more than 5 charactor";
+     // errortag.innerHTML = "Name  length must be more than 5 charactor";
+      showError("Name  length must be more than 5 charactor");
       return;
       }
 
 
     if(phone.value.length != 11) 
       {
-      errortag.innerHTML = "Phone  length must be 11 charactor";
+      //errortag.innerHTML = "Phone  length must be 11 charactor";
+      showError("Phone  length must be 11 charactor")
       return;
       }
 
     if(passowrd.value.length < 8) 
       {
-      errortag.innerHTML = "Password length must be more than 7 charactor";
+      //errortag.innerHTML = "Password length must be more than 7 charactor";
+      showError("Password length must be more than 7 charactor")
       return;
       }
   });
-
+function showError(errorText) {
+  errortag.innerHTML = errorText;
+}
 
 function hideError() {
   errortag.innerHTML = "";
