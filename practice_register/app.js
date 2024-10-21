@@ -39,7 +39,7 @@
 //    }
 // });
 
-
+/*
 
 
 
@@ -96,18 +96,32 @@ SubmitBtn.addEventListener("click", function () {
 
 
 
+*/
 
 
 
 
+let userName = document.getElementById("name");
+let phone = document.getElementById("phone");
+let email = document.getElementById("email");
+let passowrd = document.getElementById("password");
+let submitBtn = document.getElementById("password");
+
+
+// Event listen
+submitBtn.addEventListener("click", function( ) {
+  if (userName.vaue == "" || 
+      phone.value == "" || 
+      email.value == "" || 
+      passowrd.value == ""
+  ) {
+   alert("Name failed can't be empty");
+  }
 
 
 
-
-
-
-
-
+  console.log
+});
 
 
 
