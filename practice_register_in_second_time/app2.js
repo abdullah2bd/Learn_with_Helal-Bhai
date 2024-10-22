@@ -8,6 +8,8 @@
   // add event listner
 
 
+
+  
   submitBtn.addEventListener("click", function() {
     if(Name.value == "" || phone.value == "" || email.value == "" || passowrd.value == "") 
       {
