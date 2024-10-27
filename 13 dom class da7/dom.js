@@ -159,15 +159,12 @@ function renderHtml(studentObject){
 
 
 
-
-
-
 let Teacher = document.querySelector(".Teacher");
 
 
 let Teachers = [
   {
-    No: 1,
+    No:1,
     Name: 'Mossarrof sir',
     Description: 'He is a mathmatics teacher.'
   },
@@ -188,7 +185,6 @@ let Teachers = [
     Description: 'He is a english teacher.'
   },
 ];
-
 /*
 Teachers.forEach(function(loop){
   let teach = `   <div class="teachers">
@@ -198,16 +194,12 @@ Teachers.forEach(function(loop){
   </div>`;
   Teacher.innerHTML += teach;
 });
-
 */
+
 
 Teachers.forEach( function(back) {
   loops(back);
 })
-
-
-
-
 function loops(loop) {
   let teach =  `   <div class="teachers">
   <h4 class="No:">${loop.No}</h4>
@@ -215,7 +207,6 @@ function loops(loop) {
   <h5 class="Description+">${loop.Description}</h5>
 </div>`;
  Teacher.innerHTML += teach;
-
 }
 
 
@@ -230,11 +221,66 @@ function loops(loop) {
 
 
 
+/*
+
+let Teacher = document.querySelector(".Teacher");
+
+let Teachers = [
+  {
+    No: 1,
+    Name: 'Mossarrof sir',
+    Description: 'He is a mathematics teacher.'
+  },
+  {
+    No: 2,
+    Name: 'Mosa Hojor',
+    Description: 'He is a Mufti.'
+  },
+  {
+    No: 3,
+    Name: 'Johir sir',
+    Desscription: 'He is a mathmmatics teacher and Eglish.'
+  },
+  {
+    No: 4,
+    Name: 'Saiful sir',
+    Description: 'He is an English teacher.'
+  },
+];
+
+// Function to create teacher elements
+function createTeacherElement(teacher) {
+  let teach = `
+    <div class="teachers" onclick="showTeacherInfo('${teacher.Name}')">
+      <h4 class="No">${teacher.No}</h4>
+      <h3 class="Name">${teacher.Name}</h3>
+      <h5 class="Description">${teacher.Description}</h5>
+    </div>`;
+  Teacher.innerHTML += teach;
+}
+
+// Function to show teacher info
+function showTeacherInfo(name) {
+  alert(`You clicked on: ${name}`);
+}
+
+// Loop through the Teachers array and create DOM elements
+Teachers.forEach(function(teacher) {
+  createTeacherElement(teacher);
+});
+
+// Optional: Add a button to clear the list
+let clearButton = document.createElement('button');
+clearButton.innerText = 'Clear Teachers';
+clearButton.onclick = function() {
+  Teacher.innerHTML = '';
+};
+document.body.appendChild(clearButton);
 
 
 
 
-
+*/
 
 
 
