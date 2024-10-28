@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <link rel="stylesheet" href="style.css">
+
+
+<style>
+  body{
+  background-color: rgba(43, 122, 226, 0.39);
+}
+</style>
 
   <title>Document</title>
 </head>
@@ -24,17 +31,19 @@
 <div class="local">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="index1.html">About</a></li>
-    <li><a href="index2.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </div>
 
 
-  <script src="app.js">
+  <script>
     
 
 
-    localStorage.setItem("Address", "Cumilla");
+    localStorage.setItem( "Address" ,  "Cumilla" );
+    localStorage.setItem("Name", "jhon doe");
+
 
   </script>
 </body>
