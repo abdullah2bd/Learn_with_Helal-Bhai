@@ -1,55 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="style.css" />
 
+    <style>
+      body {
+        background-color: rgba(43, 122, 226, 0.39);
+      }
+    </style>
 
-<style>
-  body{
-  background-color: rgba(43, 122, 226, 0.39);
-}
-</style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is home page</h1>
 
-  <title>Document</title>
-</head>
-<body>
-  
+    <div class="local">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
-<h1>This is home page</h1>
+    <script>
+      let languageName = localStorage.setItem("Address", "Cumilla");
 
-
-
-
-
-
-
-
-
-
-<div class="local">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</div>
-
-
-  <script>
-    
-
-
-   let languageName = localStorage.setItem( "Address" ,  "Cumilla" );
-
-
-    localStorage.setItem("Name", "jhon doe");
-    localStorage.setItem( "Address" ,  "Moradnagar" );
-    localStorage.setItem("Name", "Varvarose");
-
-
-
-  </script>
-</body>
+      localStorage.setItem("Name", "jhon doe");
+      localStorage.setItem("Address", "Moradnagar");
+      localStorage.setItem("Name", "Varvarose");
+    </script>
+  </body>
 </html>
