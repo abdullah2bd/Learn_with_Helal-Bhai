@@ -1,8 +1,5 @@
 let mySubject = ["Quran", "Hadid", "Akaid", "Arabic 1st", "Arabic 2nd"];
 
-
-
-
 // mySubject.push("Bangla");
 // mySubject.shift(0,3);
 // mySubject.unshift("Math", "hhh");
@@ -22,4 +19,3 @@ let mySubject = ["Quran", "Hadid", "Akaid", "Arabic 1st", "Arabic 2nd"];
 // mySubject.slice(sub, 1);
 
 console.log(sub);
-
