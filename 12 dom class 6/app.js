@@ -28,14 +28,12 @@ let posts = [
   },
 ];
 
-posts.forEach(function(post) {
+posts.forEach(function (post) {
   let html = `<div class="poest-item">
   <h1>${post.title}</h1>
   <h4>${post.Author}</h4>
   <p>${post.Description}</p>
   <p>${post.like}</p>
-</div>`
-postGrid.innerHTML += html;
+</div>`;
+  postGrid.innerHTML += html;
 });
-
-
