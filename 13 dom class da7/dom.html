@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dom</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom</title>
+  </head>
 
-
-<style>
-  /* .list-title{
+  <style>
+    /* .list-title{
       text-align: center;
       font-size: 60px;
   }
@@ -31,61 +30,45 @@
       
       */
 
-  
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      background-color: aliceblue;
+    }
+    .Teacher {
+      border: 1px groove red;
+      box-sizing: border-box;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: linear-gradient(
+        to left bottom,
+        red,
+        green,
+        rgb(10, 189, 189)
+      );
+    }
 
+    .Teacher h4 {
+    }
 
-
-  h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    background-color: aliceblue;
-  }
-  .Teacher{
-    border: 1px groove red;
-    box-sizing: border-box;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: linear-gradient( to left bottom ,red, green, rgb(10, 189, 189));
-
-  }
-
-  .Teacher h4{
-
-  }
-
-  .teachers{
-    border: 2px rgb(120, 238, 10) groove;
-    padding: 10px;
-    margin: 0 auto;
-    color: white;
-  }
-
-
-
-
+    .teachers {
+      border: 2px rgb(120, 238, 10) groove;
+      padding: 10px;
+      margin: 0 auto;
+      color: white;
+    }
   </style>
-<body>
-  
-<!-- 
+  <body>
+    <!-- 
   <h1 class="list-title">Students Information List</h1>
   <div class="students-list">
   </div> -->
 
-    
+    <h1>Our madrasah Information</h1>
+    <div class="Teacher"></div>
 
- 
-
-<h1>Our madrasah Information</h1>
-<div class="Teacher">
-</div>
-
-
-
-
-
-
-  <script src="dom.js"></script>
-</body>
+    <script src="dom.js"></script>
+  </body>
 </html>
